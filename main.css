@@ -1,0 +1,74 @@
+
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  grid-column: 1/4;
+  z-index: 2;
+}
+
+#title {
+  grid-column: 2/4;
+  align-self: center;
+  text-align: center;
+  background: gray;
+  width: 100%;
+}
+
+#img-div {
+  grid-row: 2/2;
+  grid-column: 2/4;
+  background:gray;
+  justify-content: center;
+}
+
+#tribute-info {
+  grid-row: 3/3;
+  grid-column: 2/4;
+  background: gray;
+}
+
+footer {
+  grid-row: 4/4;
+  grid-column: 2/4;
+  background: gray;
+}
+
+#bg {
+  position: fixed;
+  background: black;
+  height: 100%;
+  width: 100%;
+}
+
+.stars {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+.stars-1 {
+  margin-top: 10%;
+  margin-left: 25%;
+  animation-duration: 1s;
+  animation-name: twinkle;
+}
+
+.stars-2 {
+  margin-top: 10%;
+  margin-left: 25%;
+  animation-duration: 1s;
+  animation-name: twinkle;
+}
+
+@keyframes twinkle {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
