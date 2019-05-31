@@ -2,99 +2,46 @@
   margin: 0;
 }
 
-#main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(10, 1fr);
-  position: fixed;
-  background: black;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
+body {
+  background: #000;
 }
 
-#content-container {
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(4, 1fr);
-  display: grid;
-  grid-column: 2/4;
-  grid-row: 2/11;
+#main {
   background: gray;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
   height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
 }
 
 #title {
-  grid-column: 2/4;
-  align-self: center;
+  grid-row: 1;
   text-align: center;
+}
+
+#img-div { 
+  grid-row: 2;
+  width: 50%;
+  background: white;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 1%;
+  border-radius: 5%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#mainImg {
   width: 100%;
-}
-
-#img-div {
-  grid-column: 2/4;
-  justify-content: center;
-  background-color: white;
-}
-
-#img-caption {
-  height: 100%;
-  grid-column: 2/5;
-}
-
-#mainImg{
-  width: 100%;
-  top: 0;
-  grid-row: 2/4;
 }
 
 #tribute-info {
-  grid-row: 3/3;
-  grid-column: 2/4;
-  margin-top: 10%;
+  grid-row: 3;
 }
 
-footer {
-  grid-row: 4/4;
-  grid-column: 2/4;
-}
-
-/*Star Animations*/
- .stars {
-  background-color: white;
-  border-radius: 50%;
-  width: 2px;
-  height: 2px;
-  animation-iteration-count: infinite;
-}
-
-.stars-1 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-2 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-3 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-4 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-5 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-6 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-7 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-8 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-9 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-10 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-11 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-12 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-13 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-14 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-15 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-16 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-17 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-18 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-19 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-20 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-21 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-.stars-22 {margin-top: 10%;margin-left: 25%;animation-duration: 2s;animation-name: twinkle;}
-
-
-@keyframes twinkle {
-  20% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  } 
+#wikiLink {
+  text-align: center;
 }
