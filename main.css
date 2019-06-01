@@ -7,31 +7,36 @@ body {
 }
 
 #main {
-  background: gray;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
   height: 100%;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  margin-top: 15%;
+  color: #FFBD33;
 }
 
 #title {
+  font-family: 'Orbitron', sans-serif;
   grid-row: 1;
   text-align: center;
+  font-size: 2.2em;
+  padding: 10%;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #img-div { 
   grid-row: 2;
-  width: 50%;
+  width: 40%;
   background: white;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 1%;
-  border-radius: 5%;
-  margin-right: auto;
-  margin-left: auto;
+  padding: .2%;
+  padding-bottom: 1%;
+  border-radius: 2%;
+  margin: 10% auto 0;
+  color: black;
 }
 
 #mainImg {
@@ -40,8 +45,29 @@ body {
 
 #tribute-info {
   grid-row: 3;
+  font-family: 'Prosto One', cursive;
+  font-size: .8em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #wikiLink {
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  margin: 2%;
+}
+
+hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+footer {
+  margin-top: 5%;
 }
