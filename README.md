@@ -1,8 +1,8 @@
 # Tribute-Page
 (FCC Project) Tribute Page
 
-//Work in progress
+//Work in progress.
 
 //First attempt using CSS Grid, CSS animations.
 
-//Codepen.io Link will go here (For freecodecamp)
+//Codepen.io Link will go here (For freecodecamp).
