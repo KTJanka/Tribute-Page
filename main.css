@@ -41,7 +41,7 @@ body {
   z-index: 100;
 }
 
-#mainImg {
+#image {
   width: 100%;
   z-index: 100;
 }
@@ -56,11 +56,7 @@ body {
   top: 0;
 }
 
-#wikiLink {
-  text-align: center;
-}
-
-#imgCap {
+#img-caption {
   font-family: 'Prosto One', cursive;
   font-size:.8em;
 }
@@ -89,7 +85,7 @@ footer {
   width: 2px;
   height: 2px;
   animation-iteration-count: infinite;
-  z-index: 50;
+  z-index: 0;
 }
 
 .stars-1 {margin-top: 51%; margin-left: 20%; animation-duration: 2s;animation-name: twinkle; position: fixed;}
